@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhumika Regmi Portfolio</title>
+  <meta name="description" content="Portfolio of Bhumika Regmi, a web developer specializing in modern web technologies. Explore my projects, skills, and contact information." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <div class="nav-left">
+    <a href="#" class="logo">🅱️Bhumika Regmi</a>
+  </div>
+  <div class="nav-center">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <!-- Desktop Toggle Only -->
+  <div class="nav-right desktop-toggle">
+    <label class="dark-mode-toggle" title="Toggle Dark Mode">
+      <input type="checkbox" id="themeToggle" />
+      <span class="slider">
+        <span class="icon sun"><i class="fas fa-sun"></i></span>
+        <span class="icon moon"><i class="fas fa-moon"></i></span>
+      </span>
+    </label>
+  </div>
+</div>
+
+<!-- Hero Typing Section -->
+<div class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="typing-wrapper">
+    <div class="typing">Bhumika Regmi...</div>
+  </div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <center><h2>ⓘ About</h2></center>
+  <p class="about-description">
+    Hi! I’m Bhumika Regmi, a passionate web developer with a love for clean design, creative coding, and turning ideas into beautiful experiences. I enjoy building fast, accessible, and responsive websites using modern technologies.
+  </p>
+  <div class="info-box card">
+    <p><strong>📍 Address:</strong> Kalanki</p>
+    <p><strong>📞 Phone:</strong> +9779741695431</p>
+    <p><strong>🎓 Education:</strong><br>Bachelor in Computer Application<br>Tribhubhan University<br>2020–2024</p>
+    <p><strong>🌐 Languages:</strong> Nepali, Hindi, English</p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <center><h2>🧠 Skills</h2></center>
+  <div class="skills-list-container">
+    <div class="skills-list">
+      <div class="skill-bar">
+        <span>HTML</span>
+        <div class="bar"><div class="fill" data-level="90%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>CSS</span>
+        <div class="bar"><div class="fill" data-level="85%"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>Java</span>
+        <div class="bar"><div class="fill" data-level="60%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <center><h2>🗂️ Projects</h2></center>
+  <div class="projects-grid">
+    <a href="calculator-app/index.html" target="_blank" class="project-card">
+      <h3>Calculator 🖩</h3>
+      <p>A sleek and functional calculator app built with HTML, CSS, and JavaScript. Supports basic arithmetic and responsive design.</p>
+    </a>
+    <a href="Visit Nepal/index.html" target="_blank" class="project-card">
+      <h3>Visit Nepal 🇳🇵</h3>
+      <p>A beautiful web page highlighting the culture, landscapes, and attractions of Nepal. Perfect for tourism and travel inspiration.</p>
+    </a>
+    <a href="Clock/clock.html" target="_blank" class="project-card">
+      <h3>Clock 🕛</h3>
+      <p>A digital clock app that shows real-time hours, minutes, and seconds with a stylish interface.</p>
+    </a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <center><h2>📬 Contact me</h2></center>
+  <form action="https://formspree.io/f/mgvkjnbd" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Email: <a href="mailto:bhumikaregmi157@gmail.com">bhumikaregmi157@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhumika-regmi-13049428a" target="_blank">Bhumika Regmi</a></p>
+    <center>Other social media links</center>
+    <div class="social-icons">
+      <a href="https://github.com/bhumika476" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/bhumika_.regmi/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/bhumika.regmi.714" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <center>
+      <h2><u>Thank you for visiting my portfolio!</u></h2>
+      <p>© 2025 Bhumika Regmi. All rights reserved.</p>
+      <p>Designed and developed by Bhumika Regmi</p><br>
+      <p>______</p><br>
+    </center>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
