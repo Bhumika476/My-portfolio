@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Time Clock</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .clock {
+            font-size: 3rem;
+            font-weight: bold;
+            border: 2px solid white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock" id="nepalClock"></div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const nepalOffset = 5.75 * 60; // Nepal Time UTC+5:45
+            const nepalTime = new Date(now.getTime() + (nepalOffset * 60000));
+
+            const hours = String(nepalTime.getUTCHours()).padStart(2, '0');
+            const minutes = String(nepalTime.getUTCMinutes()).padStart(2, '0');
+            const seconds = String(nepalTime.getUTCSeconds()).padStart(2, '0');
+
+            document.getElementById('nepalClock').textContent = `${hours} : ${minutes} : ${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call
+    </script>
+</body>
+</html>
